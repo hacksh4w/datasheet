@@ -41,7 +41,7 @@ const Page =()=>{
                     <label htmlFor='Villages'>Village: </label>
                     <input name="Village" id="village" maxLength="30"></input>
                     &nbsp;&nbsp;&nbsp;
-                    <label htmlFor='Taluk'>Taluk: </label>
+                    <label htmlFor='Taluk'>Taluk : </label>
                     <input name="Taluk" id="taluk" maxLength="30"></input>
                 </div>
                 <div className="Blood Group-Phone Number">
@@ -61,6 +61,35 @@ const Page =()=>{
                     &nbsp;&nbsp;&nbsp;
                     <label htmlFor='Phone Number'>Student's Mobile: </label>
                     <input type="number" maxLength="15"></input>
+                </div>
+                <div className="Email-AnnualIncome">
+                    <label htmlFor='Email'>Email: </label>
+                    <input type="email" maxLength="50" name="email"></input>
+                    &nbsp;&nbsp;&nbsp;
+                    <label htmlFor='annualIncome'>Annual Income Of Parents: </label>
+                    <input type="number" name="annualIncome" maxLength="8"></input>
+                </div>
+                </form>
+            </div>
+            <div className="Fathers/Guardian-details">
+                <form className="Fathers/Guardian-details">
+                <h3>Fathers/Guardians Details:</h3>
+                <div className='Name-Occupation'>
+                    <label className='Name'>Name: </label>  
+                    <input type="text" className="name" placeholder="Name"maxLength="30"></input>
+                    &nbsp;&nbsp;&nbsp;
+                    <label className='Occupation'>Occupation: </label>
+                    <input type="text" className="occupation" placeholder="Occupation"></input>
+                </div>
+                <div className="email-phone">
+                    <label className='email'>Email: </label>
+                    <input type="email" className="email" placeholder="Parent's Email"></input>
+                    &nbsp;&nbsp;&nbsp;
+                    <label className='Phone' placeholder="Phone">Phone Number 1 : </label>
+                    <input type="number" className="phone" placeholder="Phone Number"></input>
+                    &nbsp;&nbsp;&nbsp;
+                    <label className='Phone' placeholder="Phone">Phone Number 2 : </label>
+                    <input type="number" className="phone" placeholder="Phone Number"></input>
                 </div>
                 </form>
             </div>
