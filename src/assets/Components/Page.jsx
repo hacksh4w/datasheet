@@ -8,7 +8,7 @@ const Page =()=>{
                 <h3>Personal Details:</h3>
                 <div className="Name">
                     <label htmlFor="name">Name (in Block Letters) :</label>
-                    <input type="text" placeholder='Name'maxLength='30'></input>
+                    <input type="text" placeholder='Name'maxLength={30}></input>
                 </div>
                 <div className="DOB">
                     <label htmlFor='DOB'>Date Of Birth(DD/MM/YYYY): </label>
@@ -24,25 +24,25 @@ const Page =()=>{
                     </select>
                     &nbsp;&nbsp;&nbsp;
                     <label htmlFor='Caste'>Caste: </label>
-                    <input name="Caste" id="caste"maxLength="20"></input>
+                    <input name="Caste" id="caste"maxLength={20}></input>
                     &nbsp;&nbsp;&nbsp;
                     <label htmlFor='Religion'>Religion: </label>
-                    <input name="religion" id="religion" maxLength="20"></input>
+                    <input name="religion" id="religion" maxLength={20}></input>
 
                 </div>
                 <div className="Nativity-Community">
                     <label htmlFor='Nativity'>Nativity: </label>
-                    <input name="Nativity" id="nativity" maxLength="20"></input>
+                    <input name="Nativity" id="nativity" maxLength={20}></input>
                     &nbsp;&nbsp;&nbsp;
                     <label htmlFor='Community'>Community: </label>
-                    <input name="Community" id="community" maxLength="20"></input>
+                    <input name="Community" id="community" maxLength={20}></input>
                 </div>
                 <div className="Villages-Taluk">
                     <label htmlFor='Villages'>Village: </label>
-                    <input name="Village" id="village" maxLength="30"></input>
+                    <input name="Village" id="village" maxLength={30}></input>
                     &nbsp;&nbsp;&nbsp;
                     <label htmlFor='Taluk'>Taluk : </label>
-                    <input name="Taluk" id="taluk" maxLength="30"></input>
+                    <input name="Taluk" id="taluk" maxLength={30}></input>
                 </div>
                 <div className="Blood Group-Phone Number">
                     <label htmlFor='Blood Group'>Blood Group: </label>
@@ -60,14 +60,14 @@ const Page =()=>{
                     </select>
                     &nbsp;&nbsp;&nbsp;
                     <label htmlFor='Phone Number'>Student's Mobile: </label>
-                    <input type="number" maxLength="15"></input>
+                    <input type="number" maxLength={15}></input>
                 </div>
                 <div className="Email-AnnualIncome">
                     <label htmlFor='Email'>Email: </label>
-                    <input type="email" maxLength="50" name="email"></input>
+                    <input type="email" maxLength={50} name="email"></input>
                     &nbsp;&nbsp;&nbsp;
                     <label htmlFor='annualIncome'>Annual Income Of Parents: </label>
-                    <input type="number" name="annualIncome" maxLength="8"></input>
+                    <input type="number" name="annualIncome" maxLength={9}></input>
                 </div>
                 </form>
             </div>
@@ -76,20 +76,20 @@ const Page =()=>{
                 <h3>Fathers/Guardians Details:</h3>
                 <div className='Name-Occupation'>
                     <label className='Name'>Name: </label>  
-                    <input type="text" className="name" placeholder="Name"maxLength="30"></input>
+                    <input type="text" className="name" placeholder="Name"maxLength={30}></input>
                     &nbsp;&nbsp;&nbsp;
                     <label className='Occupation'>Occupation: </label>
-                    <input type="text" className="occupation" placeholder="Occupation"></input>
+                    <input type="text" className="occupation" placeholder="Occupation" maxLength={30}></input>
                 </div>
                 <div className="email-phone">
                     <label className='email'>Email: </label>
-                    <input type="email" className="email" placeholder="Parent's Email"></input>
+                    <input type="email" className="email" placeholder="Parent's Email" maxLength={50}></input>
                     &nbsp;&nbsp;&nbsp;
                     <label className='Phone' placeholder="Phone">Phone Number 1 : </label>
-                    <input type="number" className="phone" placeholder="Phone Number"></input>
+                    <input type="number" className="phone" placeholder="Phone Number" maxLength={15}></input>
                     &nbsp;&nbsp;&nbsp;
                     <label className='Phone' placeholder="Phone">Phone Number 2 : </label>
-                    <input type="number" className="phone" placeholder="Phone Number"></input>
+                    <input type="number" className="phone" placeholder="Phone Number" maxLength={15}></input>
                 </div>
                 </form>
             </div>
@@ -98,7 +98,7 @@ const Page =()=>{
                 <form className="PermenantAddress">
                     <div className="PermenantAddress">
                         <label className='Address'>Permanent Address : </label>
-                        <input type="text" className="PermenantAddress" placeholder="Address" maxLength="40"></input>
+                        <input type="text" className="PermenantAddress" placeholder="Address" maxLength={40}></input>
                         <br></br>
                         <label className='Pin'>Pin Code : </label>
                         <input type="text" className="PermenantPinCode" placeholder="PIN" maxLength={7}></input>
@@ -116,7 +116,7 @@ const Page =()=>{
                 <form className="PresentAddressform">
                     <div className="presentAddress">
                         <label className='address'>Present Address : </label>
-                        <input  type="text" className="PresentAddress" placeholder="Address"></input>
+                        <input  type="text" className="PresentAddress" placeholder="Address" maxLength={40}></input>
                         <br></br>
                         <label className='Pin'>Pin Code : </label>
                         <input type="text" className="PermenantPinCode" placeholder="PIN" maxLength={7}></input>
@@ -126,6 +126,32 @@ const Page =()=>{
                         <br></br>
                         <label className='State'>State : </label>
                         <input type="text" className="State" placeholder="State" maxLength={30}></input>
+                    </div>
+                </form>
+            </div>
+            <div className="Qualification-Exam">
+                <h3>Qualifying Examination Details: </h3>
+                <form className="Qualification">
+                    <div className="Qualification-Exam">
+                        <label className="Exam-Label">Qualifying Exam : </label>
+                        <input type="text" className="Exam" placeholder="Exam" maxLength={30}></input>
+                        &nbsp;&nbsp;&nbsp;
+                        <label className="Exam-LabelRegno">Reg. No. Qual. Exam : </label>
+                        <input type="text" className="Exam" placeholder="Reg. No." maxLength={30}></input>
+                    </div>
+                    <div className="Qualifying-Board">
+                        <label className='Board'>Qualifying Board : </label>
+                        <input type="text" className="Board" placeholder="Qualifying Board" maxLength={50}></input>
+                        &nbsp;&nbsp;&nbsp;
+                        <label className='Percentage'>Percentage : </label>
+                        <input type='float' className='Percentage' placeholder="Percentage" maxLength={5}></input>
+                        &nbsp;&nbsp;&nbsp;
+                        <label className='Year'>Year : </label>
+                        <input type="year" placeholder="Year" maxLength={4}></input>
+                    </div>
+                    <div className='NameOfInstitution'>
+                        <label className="InstitutionName">Name Of Institution : </label>
+                        <input type="text" placeholder="Institution Name" maxLength={50}></input>
                     </div>
                 </form>
             </div>
