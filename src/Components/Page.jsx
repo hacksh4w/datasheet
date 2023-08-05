@@ -16,8 +16,8 @@ const Page =()=>{
                 </div>
                 <div className="Gender-caste-Religion">
                     <label htmlFor='Gender'>Gender: </label>
-                    <select name="Gender" id="G">
-                        <option value="none" selected disabled hidden>Select an Option</option>
+                    <select name="Gender" id="G" defaultValue="None">
+                        <option value="none" disabled hidden>Select an Option</option>
                         <option>Male</option>
                         <option>Female</option>
                         <option>Others</option>
@@ -46,8 +46,8 @@ const Page =()=>{
                 </div>
                 <div className="Blood Group-Phone Number">
                     <label htmlFor='Blood Group'>Blood Group: </label>
-                    <select name="bloodGroup" id="bloodgrp">
-                        <option value="None" selected disabled hidden>Select Blood Group</option>
+                    <select name="bloodGroup" id="bloodgrp" defaultValue="None">
+                        <option value="None" disabled hidden>Select Blood Group</option>
                         <option>A+</option>
                         <option>A-</option>
                         <option>B+</option>
@@ -59,7 +59,7 @@ const Page =()=>{
                         <option>Others</option>
                     </select>
                     &nbsp;&nbsp;&nbsp;
-                    <label htmlFor='Phone Number'>Student's Mobile: </label>
+                    <label htmlFor='Phone Number'> Student's Mobile: </label>
                     <input type="number" maxLength={15}></input>
                 </div>
                 <div className="Email-AnnualIncome">
@@ -169,8 +169,8 @@ const Page =()=>{
                         <input type="number" placeholder='Rank' maxLength={10}></input>
                         <br></br>
                         <label className='Allotted-Branches'>Allotted Branch : </label>
-                        <select className='AllotteBranch'>
-                            <option value="None" selected disabled hidden></option>
+                        <select className='AllotteBranch' defaultValue="None">
+                            <option value="None" disabled hidden></option>
                             <option>Computer Science And Engineering (CS)</option>
                             <option>Computer Science and Business Systems(CSBS/CU)</option>
                             <option>Electronics And Communication Engineering(EC)</option>
